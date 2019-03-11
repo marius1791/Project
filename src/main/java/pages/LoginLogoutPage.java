@@ -2,14 +2,10 @@ package pages;
 
 import common.Helper2;
 import common.UserInfo;
-import net.serenitybdd.core.pages.PageObject;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 
 import java.util.concurrent.TimeUnit;
-import static org.hamcrest.MatcherAssert.assertThat;
 
 public class LoginLogoutPage extends Helper2 {
 

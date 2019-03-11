@@ -12,9 +12,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
-import steps.CategoriesLaptopsSteps;
 import steps.CategoriesMonitorsSteps;
-import steps.CategoriesPhonesSteps;
 
 import java.util.concurrent.TimeUnit;
 

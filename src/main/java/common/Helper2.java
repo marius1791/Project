@@ -136,7 +136,7 @@ public class Helper2 extends PageObject {
     }
 
     public void laptopsMethod(WebDriver webDriver, By element, int time, String message, By element2, By element3,
-                             By element4, By element5, By element6, By element7, By element8, By previous, By element9,
+                              By element4, By element5, By element6, By element7, By element8, By previous, By element9,
                               By element10, By element11, By element12, By element13, By element14) {
 
         Actions act = new Actions(webDriver);

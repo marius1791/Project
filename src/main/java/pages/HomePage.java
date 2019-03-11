@@ -27,7 +27,7 @@ public class HomePage extends Helper2 {
 
     // Test 1: Home button functionality
     public void selectHome() {
-        selectAndAssertTrue(this.getDriver(), home(), 3000, afterClick(), "Home button is not functional");
+        selectAndAssertTrue(this.getDriver(), home(),3000, afterClick(),"Home button is not functional");
     }
 
 

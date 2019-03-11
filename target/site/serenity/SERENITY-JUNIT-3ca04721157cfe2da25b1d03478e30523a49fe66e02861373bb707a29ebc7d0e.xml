@@ -1,1 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="TestHomePage" skipped="0" tests="1" time="4.74" timestamp="2019-02-57 02:14:13"><testcase classname="TestHomePage" name="Empty fields login"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="TestHomePage" skipped="0" tests="1" time="5.41" timestamp="2019-03-70 10:53:25"><testcase classname="TestHomePage" name="Empty fields login"><failure message="expected:&lt;By.cssSelector: a.nav-link[href*=&quot;index.html&quot;]&gt; but was:&lt;Home&gt;" type="java.lang.AssertionError">expected:&lt;By.cssSelector: a.nav-link[href*="index.html"]&gt; but was:&lt;Home&gt;</failure><system-err>expected:&lt;By.cssSelector: a.nav-link[href*="index.html"]&gt; but was:&lt;Home&gt;
+common.Helper2.assertEquals(Helper2.java:196)
+pages.HomePage.selectHome(HomePage.java:30)
+steps.HomePageSteps.homeButtonFunctionality(HomePageSteps.java:13)
+TestHomePage.emptyFieldsLogin(TestHomePage.java:45)
+</system-err></testcase></testsuite>

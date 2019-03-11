@@ -1,14 +1,9 @@
 package pages;
 
-import com.sun.jna.platform.win32.Netapi32Util;
-import common.Helper;
 import common.Helper2;
 import common.UserInfo;
-import net.serenitybdd.core.pages.PageObject;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 
 import java.util.concurrent.TimeUnit;
 

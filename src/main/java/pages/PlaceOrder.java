@@ -1,7 +1,6 @@
 package pages;
 
 import common.Helper2;
-import org.junit.Test;
 import org.openqa.selenium.By;
 
 public class PlaceOrder extends Helper2 {
