@@ -1,3 +1,4 @@
+import com.sun.jna.platform.win32.OaIdl;
 import common.*;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.junit.runners.SerenityParameterizedRunner;
@@ -34,10 +35,13 @@ public class DataDrivenExampleTest extends PageObject{
     @TestData
     public static Collection<Object[]> testData() {
         return Arrays.asList(new Object[][]{
-                {Boston, NewYork},
-                {Boston, Berlin},
-                {Portland, Rome},
-                {Paris, Berlin}
+                {Paris, BuenosAires},
+                {Philadelphia, Rome},
+                {Boston, London},
+                {Portland, Berlin},
+                {SanDiego, NewYork},
+                {MexicoCity, Dublin},
+                {SãoPaolo, Cairo}
         });
     }
 

@@ -6,7 +6,16 @@ public enum City {
     Paris("Paris"),
     Rome("Rome"),
     Berlin("Berlin"),
-    Portland("Portland");
+    Portland("Portland"),
+    MexicoCity("Mexico City"),
+    Philadelphia("Philadelphia"),
+    SanDiego("San Diego"),
+    SãoPaolo("São Paolo"),
+    BuenosAires("Buenos Aires"),
+    London("London"),
+    Dublin("Dublin"),
+    Cairo("Cairo");
+
 
     private String fullName;
 
