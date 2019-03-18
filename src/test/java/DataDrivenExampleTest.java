@@ -21,6 +21,7 @@ import static common.City.*;
 @Story(Application.SomeFeature.class)
 @RunWith(SerenityParameterizedRunner.class)
 @UseTestDataFrom(value = "src/main/resources/urls.csv", separator = Constants.CSV_SEPARATOR)
+
 @Concurrent
 public class DataDrivenExampleTest extends PageObject{
     @Managed(uniqueSession = true, driver = "Chrome")
@@ -29,28 +30,6 @@ public class DataDrivenExampleTest extends PageObject{
     @Managed HomeHelper homeHelper;
     @Managed FlightsPage flightsPage;
 
-
-    
-    private String url;
-
-    @Before
-    public void setupBrowser() {
-        //open url
-        getDriver().get(url);
-
-        // make sure the window is maximized
-        driver.manage().window().maximize();
-
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
-
-    }
-
-    @After
-    public void waitAndQuit() {
-        waitABit(1000);
-        driver.quit();
-    }
 
     @TestData
     public static Collection<Object[]> testData() {
@@ -68,6 +47,25 @@ public class DataDrivenExampleTest extends PageObject{
     public DataDrivenExampleTest(City cityFrom, City cityTo) {
         this.cityFrom = cityFrom;
         this.cityTo = cityTo;
+    }
+
+    @Before
+    public void setupBrowser() {
+        //open url
+        getDriver().get("http://blazedemo.com/");
+
+        // make sure the window is maximized
+        driver.manage().window().maximize();
+
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
+
+    }
+
+    @After
+    public void waitAndQuit() {
+        waitABit(1000);
+        driver.quit();
     }
 
     @Test

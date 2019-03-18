@@ -5,7 +5,7 @@ import net.thucydides.core.annotations.DefaultUrl;
 
 import java.util.concurrent.TimeUnit;
 
-@DefaultUrl("http://blazedemo.com/reserve.php")
+@DefaultUrl("http://blazedemo.com/")
 public class HomeHelper extends PageObject {
 
     /*

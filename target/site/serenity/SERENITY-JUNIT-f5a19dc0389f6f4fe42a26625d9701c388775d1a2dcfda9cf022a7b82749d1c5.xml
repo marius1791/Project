@@ -1,7 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="4" failures="0" name="DataDrivenExampleTest" skipped="0" tests="4" time="24.21" timestamp="2019-03-77 11:08:47"><testcase classname="DataDrivenExampleTest" name="Verify search between different locations"><error message="null value in entry: url=null" type="java.lang.NullPointerException">null value in entry: url=null</error><system-err>null value in entry: url=null
-com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:34)
-com.google.common.collect.SingletonImmutableBiMap.&lt;init&gt;(SingletonImmutableBiMap.java:42)
-com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:73)
-com.google.common.collect.ImmutableMap.of(ImmutableMap.java:120)
-DataDrivenExampleTest.setupBrowser(DataDrivenExampleTest.java:39)
-</system-err></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="DataDrivenExampleTest" skipped="4" tests="4" time="43.5" timestamp="2019-03-77 11:41:55"><testcase classname="DataDrivenExampleTest" name="Verify search between different locations"/></testsuite>

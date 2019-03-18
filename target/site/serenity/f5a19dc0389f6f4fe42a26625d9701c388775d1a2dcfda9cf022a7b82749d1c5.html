@@ -58,7 +58,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 18-03-2019 11:08</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 18-03-2019 11:41</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -91,9 +91,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-exclamation-triangle error-icon fa-3x' title='ERROR'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-3x' title='SUCCESS'></i></span>
                             <span class="test-case-title">
-                                    <span class="error-color">
+                                    <span class="success-color">
                                     Verify Search Between Different Locations
                                         <span class="related-issue-title"></span>
                                 </span>
@@ -129,31 +129,31 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="test-ERROR"><a href="#0">1</a></td>
-                            <td class="test-ERROR"><a href="#0">Boston</a>
+                        <td class="test-UNDEFINED"><a href="#0">1</a></td>
+                            <td class="test-UNDEFINED"><a href="#0">Boston</a>
                             </td>
-                            <td class="test-ERROR"><a href="#0">NewYork</a>
-                            </td>
-                    </tr>
-                    <tr>
-                        <td class="test-ERROR"><a href="#1">2</a></td>
-                            <td class="test-ERROR"><a href="#1">Boston</a>
-                            </td>
-                            <td class="test-ERROR"><a href="#1">Berlin</a>
+                            <td class="test-UNDEFINED"><a href="#0">NewYork</a>
                             </td>
                     </tr>
                     <tr>
-                        <td class="test-ERROR"><a href="#2">3</a></td>
-                            <td class="test-ERROR"><a href="#2">Portland</a>
+                        <td class="test-UNDEFINED"><a href="#1">2</a></td>
+                            <td class="test-UNDEFINED"><a href="#1">Boston</a>
                             </td>
-                            <td class="test-ERROR"><a href="#2">Rome</a>
+                            <td class="test-UNDEFINED"><a href="#1">Berlin</a>
                             </td>
                     </tr>
                     <tr>
-                        <td class="test-ERROR"><a href="#3">4</a></td>
-                            <td class="test-ERROR"><a href="#3">Paris</a>
+                        <td class="test-UNDEFINED"><a href="#2">3</a></td>
+                            <td class="test-UNDEFINED"><a href="#2">Portland</a>
                             </td>
-                            <td class="test-ERROR"><a href="#3">Berlin</a>
+                            <td class="test-UNDEFINED"><a href="#2">Rome</a>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class="test-UNDEFINED"><a href="#3">4</a></td>
+                            <td class="test-UNDEFINED"><a href="#3">Paris</a>
+                            </td>
+                            <td class="test-UNDEFINED"><a href="#3">Berlin</a>
                             </td>
                     </tr>
                 </tbody>
@@ -176,11 +176,11 @@
                 <tr class="step-table-separator">
                     <td colspan="5"></td>
                 </tr>
-                <tr class="test-ERROR">
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         <a name="0"/>
                             <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
+                                  class="top-level-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
@@ -188,117 +188,29 @@
 
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">ERROR</span></td>
-                    <td width="100"><span class="top-level-step">6.03s</span></td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">11.22s</span></td>
                 </tr>
-                    <tr class="test-ERROR">
-                        <td width="40">&nbsp</td>
-                        <td width="%" colspan="4" class="error-message-cell">
-                            <div class="error-message ellipsis"
-                                 title='Null pointer exception: null value in entry: url=null'>
-                                <pre>Null pointer exception: null value in entry: url=null</pre>
-                            </div>
-                <div><!-- Stack trace -->
-                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
-                            data-target="#stacktraceModal-1">
-                        View stack trace
-                    </button>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="stacktraceModal-1" tabindex="-1" role="dialog"
-                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"
-                                        aria-label="Close"><span aria-hidden="true">&times;</span>
-                                </button>
-                                <h4 class="modal-title" id="stacktraceModalLabel">
-                                java.lang.NullPointerException
-                                </h4>
-                            </div>
-                            <div class="modal-body">
-                                    <h5>null value in entry: url=null</h5>
-                                com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java
-                                    :34) <br>
-                                com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java
-                                    :42) <br>
-                                com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java
-                                    :73) <br>
-                                com.google.common.collect.ImmutableMap.of(ImmutableMap.java
-                                    :120) <br>
-                                DataDrivenExampleTest.setupBrowser(DataDrivenExampleTest.java
-                                    :39) <br>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">
-                                    Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                        </td>
-                    </tr>
-                <tr class="test-FAILURE">
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         <a name="1"/>
                             <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
+                                  class="top-level-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="top-level-step">Failure</span>
+                            <span class="top-level-step">Verify search between different locations</span>
 
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">FAILURE</span></td>
-                    <td width="100"><span class="top-level-step">0s</span></td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">10.83s</span></td>
                 </tr>
-                    <tr class="test-FAILURE">
-                        <td width="40">&nbsp</td>
-                        <td width="%" colspan="4" class="error-message-cell">
-                            <div class="error-message ellipsis"
-                                 title='Assertion error: null value in entry: url=null'>
-                                <pre>Assertion error: null value in entry: url=null</pre>
-                            </div>
-                <div><!-- Stack trace -->
-                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
-                            data-target="#stacktraceModal-2">
-                        View stack trace
-                    </button>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="stacktraceModal-2" tabindex="-1" role="dialog"
-                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"
-                                        aria-label="Close"><span aria-hidden="true">&times;</span>
-                                </button>
-                                <h4 class="modal-title" id="stacktraceModalLabel">
-                                java.lang.AssertionError
-                                </h4>
-                            </div>
-                            <div class="modal-body">
-                                    <h5>null value in entry: url=null</h5>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">
-                                    Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                        </td>
-                    </tr>
-                <tr class="test-ERROR">
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         <a name="2"/>
                             <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
+                                  class="top-level-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
@@ -306,117 +218,14 @@
 
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">ERROR</span></td>
-                    <td width="100"><span class="top-level-step">5.93s</span></td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">10.78s</span></td>
                 </tr>
-                    <tr class="test-ERROR">
-                        <td width="40">&nbsp</td>
-                        <td width="%" colspan="4" class="error-message-cell">
-                            <div class="error-message ellipsis"
-                                 title='Null pointer exception: null value in entry: url=null'>
-                                <pre>Null pointer exception: null value in entry: url=null</pre>
-                            </div>
-                <div><!-- Stack trace -->
-                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
-                            data-target="#stacktraceModal-3">
-                        View stack trace
-                    </button>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="stacktraceModal-3" tabindex="-1" role="dialog"
-                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"
-                                        aria-label="Close"><span aria-hidden="true">&times;</span>
-                                </button>
-                                <h4 class="modal-title" id="stacktraceModalLabel">
-                                java.lang.NullPointerException
-                                </h4>
-                            </div>
-                            <div class="modal-body">
-                                    <h5>null value in entry: url=null</h5>
-                                com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java
-                                    :34) <br>
-                                com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java
-                                    :42) <br>
-                                com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java
-                                    :73) <br>
-                                com.google.common.collect.ImmutableMap.of(ImmutableMap.java
-                                    :120) <br>
-                                DataDrivenExampleTest.setupBrowser(DataDrivenExampleTest.java
-                                    :39) <br>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">
-                                    Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                        </td>
-                    </tr>
-                <tr class="test-FAILURE">
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         <a name="3"/>
                             <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="top-level-step">Failure</span>
-
-                        </div>
-                    </td>
-                    <td width="100"><span class="top-level-step">FAILURE</span></td>
-                    <td width="100"><span class="top-level-step">0s</span></td>
-                </tr>
-                    <tr class="test-FAILURE">
-                        <td width="40">&nbsp</td>
-                        <td width="%" colspan="4" class="error-message-cell">
-                            <div class="error-message ellipsis"
-                                 title='Assertion error: null value in entry: url=null'>
-                                <pre>Assertion error: null value in entry: url=null</pre>
-                            </div>
-                <div><!-- Stack trace -->
-                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
-                            data-target="#stacktraceModal-4">
-                        View stack trace
-                    </button>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="stacktraceModal-4" tabindex="-1" role="dialog"
-                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"
-                                        aria-label="Close"><span aria-hidden="true">&times;</span>
-                                </button>
-                                <h4 class="modal-title" id="stacktraceModalLabel">
-                                java.lang.AssertionError
-                                </h4>
-                            </div>
-                            <div class="modal-body">
-                                    <h5>null value in entry: url=null</h5>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">
-                                    Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                        </td>
-                    </tr>
-                <tr class="test-ERROR">
-                    <td width="60" class="step-icon">
-                        <a name="4"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
+                                  class="top-level-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
@@ -424,234 +233,13 @@
 
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">ERROR</span></td>
-                    <td width="100"><span class="top-level-step">6.24s</span></td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">10.67s</span></td>
                 </tr>
-                    <tr class="test-ERROR">
-                        <td width="40">&nbsp</td>
-                        <td width="%" colspan="4" class="error-message-cell">
-                            <div class="error-message ellipsis"
-                                 title='Null pointer exception: null value in entry: url=null'>
-                                <pre>Null pointer exception: null value in entry: url=null</pre>
-                            </div>
-                <div><!-- Stack trace -->
-                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
-                            data-target="#stacktraceModal-5">
-                        View stack trace
-                    </button>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="stacktraceModal-5" tabindex="-1" role="dialog"
-                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"
-                                        aria-label="Close"><span aria-hidden="true">&times;</span>
-                                </button>
-                                <h4 class="modal-title" id="stacktraceModalLabel">
-                                java.lang.NullPointerException
-                                </h4>
-                            </div>
-                            <div class="modal-body">
-                                    <h5>null value in entry: url=null</h5>
-                                com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java
-                                    :34) <br>
-                                com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java
-                                    :42) <br>
-                                com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java
-                                    :73) <br>
-                                com.google.common.collect.ImmutableMap.of(ImmutableMap.java
-                                    :120) <br>
-                                DataDrivenExampleTest.setupBrowser(DataDrivenExampleTest.java
-                                    :39) <br>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">
-                                    Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                        </td>
-                    </tr>
-                <tr class="test-FAILURE">
-                    <td width="60" class="step-icon">
-                        <a name="5"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="top-level-step">Failure</span>
-
-                        </div>
-                    </td>
-                    <td width="100"><span class="top-level-step">FAILURE</span></td>
-                    <td width="100"><span class="top-level-step">0s</span></td>
-                </tr>
-                    <tr class="test-FAILURE">
-                        <td width="40">&nbsp</td>
-                        <td width="%" colspan="4" class="error-message-cell">
-                            <div class="error-message ellipsis"
-                                 title='Assertion error: null value in entry: url=null'>
-                                <pre>Assertion error: null value in entry: url=null</pre>
-                            </div>
-                <div><!-- Stack trace -->
-                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
-                            data-target="#stacktraceModal-6">
-                        View stack trace
-                    </button>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="stacktraceModal-6" tabindex="-1" role="dialog"
-                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"
-                                        aria-label="Close"><span aria-hidden="true">&times;</span>
-                                </button>
-                                <h4 class="modal-title" id="stacktraceModalLabel">
-                                java.lang.AssertionError
-                                </h4>
-                            </div>
-                            <div class="modal-body">
-                                    <h5>null value in entry: url=null</h5>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">
-                                    Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                        </td>
-                    </tr>
-                <tr class="test-ERROR">
-                    <td width="60" class="step-icon">
-                        <a name="6"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="top-level-step">Verify search between different locations</span>
-
-                        </div>
-                    </td>
-                    <td width="100"><span class="top-level-step">ERROR</span></td>
-                    <td width="100"><span class="top-level-step">6s</span></td>
-                </tr>
-                    <tr class="test-ERROR">
-                        <td width="40">&nbsp</td>
-                        <td width="%" colspan="4" class="error-message-cell">
-                            <div class="error-message ellipsis"
-                                 title='Null pointer exception: null value in entry: url=null'>
-                                <pre>Null pointer exception: null value in entry: url=null</pre>
-                            </div>
-                <div><!-- Stack trace -->
-                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
-                            data-target="#stacktraceModal-7">
-                        View stack trace
-                    </button>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="stacktraceModal-7" tabindex="-1" role="dialog"
-                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"
-                                        aria-label="Close"><span aria-hidden="true">&times;</span>
-                                </button>
-                                <h4 class="modal-title" id="stacktraceModalLabel">
-                                java.lang.NullPointerException
-                                </h4>
-                            </div>
-                            <div class="modal-body">
-                                    <h5>null value in entry: url=null</h5>
-                                com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java
-                                    :34) <br>
-                                com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java
-                                    :42) <br>
-                                com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java
-                                    :73) <br>
-                                com.google.common.collect.ImmutableMap.of(ImmutableMap.java
-                                    :120) <br>
-                                DataDrivenExampleTest.setupBrowser(DataDrivenExampleTest.java
-                                    :39) <br>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">
-                                    Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                        </td>
-                    </tr>
-                <tr class="test-FAILURE">
-                    <td width="60" class="step-icon">
-                        <a name="7"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="top-level-step">Failure</span>
-
-                        </div>
-                    </td>
-                    <td width="100"><span class="top-level-step">FAILURE</span></td>
-                    <td width="100"><span class="top-level-step">0s</span></td>
-                </tr>
-                    <tr class="test-FAILURE">
-                        <td width="40">&nbsp</td>
-                        <td width="%" colspan="4" class="error-message-cell">
-                            <div class="error-message ellipsis"
-                                 title='Assertion error: null value in entry: url=null'>
-                                <pre>Assertion error: null value in entry: url=null</pre>
-                            </div>
-                <div><!-- Stack trace -->
-                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
-                            data-target="#stacktraceModal-0">
-                        View stack trace
-                    </button>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="stacktraceModal-0" tabindex="-1" role="dialog"
-                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"
-                                        aria-label="Close"><span aria-hidden="true">&times;</span>
-                                </button>
-                                <h4 class="modal-title" id="stacktraceModalLabel">
-                                java.lang.AssertionError
-                                </h4>
-                            </div>
-                            <div class="modal-body">
-                                    <h5>null value in entry: url=null</h5>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">
-                                    Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                        </td>
-                    </tr>
-                <tr class="test-ERROR">
+                <tr class="test-SUCCESS">
                     <td colspan="2"></td>
-                    <td width="100"><span class="top-level-step"><em>ERROR</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>24.21s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>SUCCESS</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>43.5s</em></span></td>
                 </tr>
 
             </table>
