@@ -66,7 +66,8 @@ public class Helper2 extends PageObject {
 
     }
 
-    public void verifyAndAssertElement(By element, String message) {
+    public void verifyAndAssertElement(WebDriver webDriver, By element, String message) {
+        Actions act = new Actions(webDriver);
         element(element).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
         Assert.assertTrue(message, find(element).isDisplayed());
     }

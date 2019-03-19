@@ -40,9 +40,9 @@ public class TestHomePage extends PageObject {
 
     @Test
     @Title("Empty fields login")
-    public void emptyFieldsLogin() {
+    public void HomeElements() {
 
-        step.homeButtonFunctionality();
+        step.homeElements();
         waitABit(1000);
         driver.quit();
 

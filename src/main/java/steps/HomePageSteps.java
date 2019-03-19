@@ -9,8 +9,8 @@ public class HomePageSteps extends ScenarioSteps {
     HomePage sp;
 
     @Step("Test 1: Home functionality")
-    public void homeButtonFunctionality() {
-        sp.selectHome();
+    public void homeElements() {
+        sp.homeElements();
     }
 
 }
