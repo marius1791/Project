@@ -39,13 +39,22 @@ public class TestHomePage extends PageObject {
     }
 
     @Test
-    @Title("Empty fields login")
+    @Title("Home Elements")
     public void HomeElements() {
 
         step.homeElements();
         waitABit(1000);
         driver.quit();
 
+    }
+
+    @Test
+    @Title("Home link functionality")
+    public void HomeLinkFunctionality() {
+
+        step.linkFunctionality();
+        waitABit(1000);
+        driver.quit();
     }
 }
 
