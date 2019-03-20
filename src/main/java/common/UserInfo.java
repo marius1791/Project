@@ -4,19 +4,19 @@ import java.util.Random;
 
 
 public class UserInfo {
-    public static void main(String[] args) {
-        System.out.println("Marius" + System.currentTimeMillis());
-        try {
-            Thread.sleep(10);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        System.out.println("Marius" + System.currentTimeMillis());
-        System.out.println("Marius" + System.currentTimeMillis());
-
-    }
+//    public static void main(String[] args) {
+//        System.out.println("Marius" + System.currentTimeMillis());
+//        try {
+//            Thread.sleep(10);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+//        System.out.println("Marius" + System.currentTimeMillis());
+//        System.out.println("Marius" + System.currentTimeMillis());
+// }
 
     public String username = "";
+    public String company = "";
     public String password = "";
     public String username2 = "";
     public String validUsernameBlankSpace = "";
@@ -32,6 +32,7 @@ public class UserInfo {
     public String invalidEmail = "";
     public String invalidName = "";
     public String invalidMessage = "";
+    public String validEmail = "";
 
 
     //generate valid random user info
@@ -44,6 +45,7 @@ public class UserInfo {
                 new RandomString(3, new Random(), RandomString.digits).nextString() +
                 new RandomString(2, new Random(), RandomString.specialCharacter).nextString();
         password = username;
+        company = username;
         username2 = "yopeso" + randomString.nextString();
 
         // Invalid Credentials-
@@ -58,6 +60,7 @@ public class UserInfo {
         passwordLowercaseCredentials = usernameLowercaseCredentials;
         usernameUppercaseCredentials = new RandomString(10, new Random(), RandomString.upper).nextString();
         passwordUppercaseCredentials = usernameUppercaseCredentials;
+        validEmail = new RandomString(10, new Random(), RandomString.lower).nextString() + "@gmail.com";
         invalidEmail = new RandomString(10, new Random(), RandomString.alphanum).nextString();
         invalidName = invalidEmail;
         invalidMessage = invalidEmail;

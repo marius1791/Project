@@ -7,20 +7,20 @@ import pages.HomePage;
 
 public class HomePageSteps extends ScenarioSteps {
 
-    HomePage sp;
+    HomePage homePage;
 
     @Step("Test 1: Home Elements")
     public void homeElements() {
-        sp.homeElements();
+        homePage.homeElements();
     }
 
     @Step("Test 2: Home link functioality")
     public void linkFunctionality() {
-        sp.homePageLinkFunctionality();
+        homePage.homePageLinkFunctionality();
     }
 
     @Step("Test 3: Select Home and all the elements from Login are present ")
     public void LoginElements() {
-        sp.LoginElements();
+        homePage.LoginElements();
     }
 }

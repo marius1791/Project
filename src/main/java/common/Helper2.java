@@ -212,4 +212,10 @@ public class Helper2 extends PageObject {
         Assert.assertTrue(find(element8).isDisplayed());
         waitABit(3000);
     }
+
+    public void url (WebDriver webDriver, String url) {
+        Actions act = new Actions(webDriver);
+        String URL = webDriver.getCurrentUrl();
+        Assert.assertEquals(URL, url );
+    }
 }
