@@ -56,5 +56,15 @@ public class TestHomePage extends PageObject {
         waitABit(1000);
         driver.quit();
     }
+
+    @Test
+    @Title("Login Elements")
+    public void loginElements () {
+
+        step.LoginElements();
+        waitABit(1000);
+        driver.quit();
+    }
+
 }
 

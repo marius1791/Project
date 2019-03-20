@@ -15,11 +15,11 @@ import java.util.concurrent.TimeUnit;
 
 public class HomePage extends Helper2 {
 
-    public static By travel_the_world_subtitle() {
+    public static By home_subtitle() {
         return By.xpath("//a[contains(text(),'home')]");
     }
 
-    public static By home_subtitle() {
+    public static By travel_the_world_subtitle() {
         return By.xpath("//a[contains(text(),'Travel The World')]");
     }
 
@@ -83,6 +83,14 @@ public class HomePage extends Helper2 {
         return By.className("checkbox");
     }
 
+    public static By login_button2() {
+        return By.cssSelector(".btn[type='submit']");
+    }
+
+    public static By forgot_your_password_button() {
+        return By.cssSelector(".btn[href='http://blazedemo.com/password/reset']");
+    }
+
     // Test 1: Home button Elements
     public void homeElements() {
         SoftAssertions softly = new SoftAssertions();
@@ -108,20 +116,9 @@ public class HomePage extends Helper2 {
 
     // Test 3: Home element functionality and login elements should be present after Home is selected
 
-    public void selectHomeAndLoginPageIsPresent(WebDriver webDriver) {
-        Actions act = new Actions(webDriver);
-        act.moveToElement(webDriver.findElement(home_subtitle())).click().build().perform();
-        waitABit(3000);
-        element(login_button()).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
-        Assert.assertTrue(find(login_button()).isDisplayed());
-        element(register_button()).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
-        Assert.assertTrue(find(login_button()).isDisplayed());
-        element(email_address()).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
-        Assert.assertTrue(find(email_address()).isDisplayed());
-        element(password()).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
-        Assert.assertTrue(find(password()).isDisplayed());
-        element(remember_me_checkbox()).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
-        Assert.assertTrue(find(remember_me_checkbox()).isDisplayed());
-        waitABit(3000);
+    public void LoginElements () {
+        selectHomeAndLoginPageIsPresent(this.getDriver(), home_subtitle(), login_button(), register_button(),
+                email_address(), password(), remember_me_checkbox(), login_button2(), forgot_your_password_button());
+
     }
 }

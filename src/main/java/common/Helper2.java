@@ -189,4 +189,27 @@ public class Helper2 extends PageObject {
         Assert.assertTrue(message, find(element3).isDisplayed());
         waitABit(time);
     }
+
+    public void selectHomeAndLoginPageIsPresent(WebDriver webDriver, By element1, By element2,
+                                                By element3, By element4, By element5,
+                                                By element6, By element7, By element8) {
+        Actions act = new Actions(webDriver);
+        act.moveToElement(webDriver.findElement(element1)).click().build().perform();
+        waitABit(5000);
+        element(element2).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
+        Assert.assertTrue(find(element2).isDisplayed());
+        element(element3).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
+        Assert.assertTrue(find(element3).isDisplayed());
+        element(element4).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
+        Assert.assertTrue(find(element4).isDisplayed());
+        element(element5).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
+        Assert.assertTrue(find(element5).isDisplayed());
+        element(element6).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
+        Assert.assertTrue(find(element6).isDisplayed());
+        element(element7).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
+        Assert.assertTrue(find(element7).isDisplayed());
+        element(element8).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
+        Assert.assertTrue(find(element8).isDisplayed());
+        waitABit(3000);
+    }
 }
