@@ -13,6 +13,5 @@ public class Register_FLow_Steps extends ScenarioSteps {
     public void registerFlow() {
         UserInfo userInfo = new UserInfo().generateUser();
         register_flow_page.register_flow(userInfo);
-
     }
 }

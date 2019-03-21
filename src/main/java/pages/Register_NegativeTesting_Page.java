@@ -1,10 +1,9 @@
 package pages;
 
 import common.Helper2;
-import common.UserInfo;
 import org.openqa.selenium.By;
 
-public class Register_Flow_Page extends Helper2 {
+public class Register_NegativeTesting_Page extends Helper2 {
 
     public static By home_subtitle() {
         return By.xpath("//a[contains(text(),'home')]");
@@ -39,16 +38,10 @@ public class Register_Flow_Page extends Helper2 {
     }
 
 
-    // Test 1: Test register flow
-    public void register_flow(UserInfo userInfo) {
+    public void blankUsername() {
         clickElement(this.getDriver(),home_subtitle(), 3000);
         clickElement(this.getDriver(), register_button(),3000);
-        clickAndSendKeys(this.getDriver(), name_field(), userInfo.username, 1000);
-        clickAndSendKeys(this.getDriver(), company_field(), userInfo.company, 1000);
-        clickAndSendKeys(this.getDriver(), email_address(), userInfo.validEmail, 1000);
-        clickAndSendKeys(this.getDriver(), password(), "Marius91", 1000);
-        clickAndSendKeys(this.getDriver(), confirm_password(), "Marius91", 1000);
-        clickElement(this.getDriver(), register_confirmation_button(), 2000);
-        url(this.getDriver(), "http://blazedemo.com/login");
+        clickElement(this.getDriver(), register_confirmation_button(), 3000);
+//        popUp(this.getDriver(), "Please fill in this field.");
     }
 }

@@ -2,6 +2,7 @@ package common;
 
 import net.serenitybdd.core.pages.PageObject;
 import org.junit.Assert;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -216,6 +217,20 @@ public class Helper2 extends PageObject {
     public void url (WebDriver webDriver, String url) {
         Actions act = new Actions(webDriver);
         String URL = webDriver.getCurrentUrl();
-        Assert.assertEquals(URL, url );
+        Assert.assertEquals(URL, url);
     }
-}
+
+    public void popUp(WebDriver driver, String message) {
+        Alert alert = driver.switchTo().alert();
+        System.out.println(alert.getText());
+
+        String text = alert.getText();
+
+        if (text.equals(message)) {
+            System.out.println("correct Message");
+        }
+            else{
+                System.out.println("incorrect Message");
+            }
+        }
+    }
