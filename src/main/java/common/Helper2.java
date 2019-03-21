@@ -9,6 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 
 
+import java.util.Iterator;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 
@@ -214,7 +216,7 @@ public class Helper2 extends PageObject {
         waitABit(3000);
     }
 
-    public void url (WebDriver webDriver, String url) {
+    public void url(WebDriver webDriver, String url) {
         Actions act = new Actions(webDriver);
         String URL = webDriver.getCurrentUrl();
         Assert.assertEquals(URL, url);
@@ -228,9 +230,25 @@ public class Helper2 extends PageObject {
 
         if (text.equals(message)) {
             System.out.println("correct Message");
-        }
-            else{
-                System.out.println("incorrect Message");
-            }
+        } else {
+            System.out.println("incorrect Message");
         }
     }
+
+
+    public void popUp2(WebDriver driver) {
+        String parentWindowHandler = driver.getWindowHandle(); // Store your parent window
+        String subWindowHandler = null;
+
+        Set<String> handles = driver.getWindowHandles(); // get all window handles
+        Iterator<String> iterator = handles.iterator();
+        while (iterator.hasNext()) {
+            subWindowHandler = iterator.next();
+        }
+        driver.switchTo().window(subWindowHandler); // switch to popup window
+
+       // Now you are in the popup window, perform necessary actions here
+
+        driver.switchTo().window(parentWindowHandler);  // switch back to parent window
+    }
+}

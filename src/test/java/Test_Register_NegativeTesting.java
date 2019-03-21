@@ -13,8 +13,6 @@ import org.openqa.selenium.WebDriver;
 
 import common.Application;
 import common.Constants;
-import pages.Register_NegativeTesting_Page;
-import steps.HomePageSteps;
 import steps.Register_NegativeTesting_Steps;
 
 @Story(Application.SomeFeature.class)
@@ -42,12 +40,48 @@ public class Test_Register_NegativeTesting extends PageObject {
     }
 
     @Test
-    @Title("Blank Name")
-    public void HomeElements() {
+    @Title("Blank Name field")
+    public void blank_name_field() {
 
-        step.blankUsername();
+        step.blankName();
         waitABit(1000);
         driver.quit();
-
     }
+
+    @Test
+    @Title("Blank Company field")
+    public void blank_company_field() {
+
+        step.blankCompany();
+        waitABit(1000);
+        driver.quit();
+    }
+
+    @Test
+    @Title("Blank Email field")
+    public void blank_email_field() {
+
+        step.blankEmail();
+        waitABit(1000);
+        driver.quit();
+    }
+
+    @Test
+    @Title("Blank Email field")
+    public void blank_password_field() {
+
+        step.blankPassword();
+        waitABit(1000);
+        driver.quit();
+    }
+
+    @Test
+    @Title("Blank Confirm Password field")
+    public void blank_confirm_password_field() {
+
+        step.blankConfirmPassword();
+        waitABit(1000);
+        driver.quit();
+    }
+
 }
