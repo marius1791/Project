@@ -84,4 +84,38 @@ public class Register_NegativeTesting_Page extends Helper2 {
         clickElement(this.getDriver(), register_confirmation_button(), 3000);
         popUp2(this.getDriver());
     }
+
+    public void invalid_name_specialCharacters(UserInfo userInfo) {
+        clickElement(this.getDriver(), home_subtitle(), 3000);
+        clickElement(this.getDriver(), register_button(), 3000);
+        clickAndSendKeys(this.getDriver(), name_field(), userInfo.specialCharacters, 2000);
+        clickAndSendKeys(this.getDriver(), company_field(), userInfo.company, 2000);
+        clickAndSendKeys(this.getDriver(), email_address(), userInfo.validEmail, 2000);
+        clickAndSendKeys(this.getDriver(), password(), "Marius91", 2000);
+        clickAndSendKeys(this.getDriver(), confirm_password(),"Marius91", 2000);
+        clickElement(this.getDriver(), register_confirmation_button(), 3000);
+    }
+
+    public void invalid_company_specialCharacters(UserInfo userInfo) {
+        clickElement(this.getDriver(), home_subtitle(), 3000);
+        clickElement(this.getDriver(), register_button(), 3000);
+        clickAndSendKeys(this.getDriver(), name_field(), userInfo.username, 2000);
+        clickAndSendKeys(this.getDriver(), company_field(), userInfo.specialCharacters, 2000);
+        clickAndSendKeys(this.getDriver(), email_address(), userInfo.validEmail, 2000);
+        clickAndSendKeys(this.getDriver(), password(), "Marius91", 2000);
+        clickAndSendKeys(this.getDriver(), confirm_password(),"Marius91", 2000);
+        clickElement(this.getDriver(), register_confirmation_button(), 3000);
+    }
+
+    public void invalid_email_specialCharacters(UserInfo userInfo) {
+        clickElement(this.getDriver(), home_subtitle(), 3000);
+        clickElement(this.getDriver(), register_button(), 3000);
+        clickAndSendKeys(this.getDriver(), name_field(), userInfo.username, 2000);
+        clickAndSendKeys(this.getDriver(), company_field(), userInfo.company, 2000);
+        clickAndSendKeys(this.getDriver(), email_address(), userInfo.specialCharacters, 2000);
+        clickAndSendKeys(this.getDriver(), password(), "Marius91", 2000);
+        clickAndSendKeys(this.getDriver(), confirm_password(),"Marius91", 2000);
+        clickElement(this.getDriver(), register_confirmation_button(), 3000);
+        popUp2(this.getDriver());
+    }
 }

@@ -84,4 +84,30 @@ public class Test_Register_NegativeTesting extends PageObject {
         driver.quit();
     }
 
+    @Test
+    @Title("Special characters on name field")
+    public void special_characters_name_field() {
+
+        step.specialCharacters_nameField();
+        waitABit(1000);
+        driver.quit();
+    }
+
+    @Test
+    @Title("Special characters on company field")
+    public void special_characters_company_field() {
+
+        step.specialCharacters_companyField();
+        waitABit(1000);
+        driver.quit();
+    }
+
+    @Test
+    @Title("Special characters on email field")
+    public void special_characters_email_field() {
+
+        step.specialCharacters_emailField();
+        waitABit(1000);
+        driver.quit();
+    }
 }

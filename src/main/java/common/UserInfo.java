@@ -21,7 +21,7 @@ public class UserInfo {
     public String username2 = "";
     public String validUsernameBlankSpace = "";
     public String validPasswordBlankSpace = "";
-    public String usernameSpecialCharacters = "";
+    public String specialCharacters = "";
     public String passwordSpecialCharacters = "";
     public String usernameDigits = "";
     public String passwordDigits = "";
@@ -52,8 +52,8 @@ public class UserInfo {
         validUsernameBlankSpace = new RandomString(20, new Random(), RandomString.alphanum).nextString() +
                 " ";
         validPasswordBlankSpace = validUsernameBlankSpace;
-        usernameSpecialCharacters = new RandomString(10, new Random(), RandomString.specialCharacter).nextString();
-        passwordSpecialCharacters = usernameSpecialCharacters;
+        specialCharacters = new RandomString(10, new Random(), RandomString.specialCharacter).nextString();
+        passwordSpecialCharacters = specialCharacters;
         usernameDigits = new RandomString(10, new Random(), RandomString.digits).nextString();
         passwordDigits = usernameDigits;
         usernameLowercaseCredentials = new RandomString(10, new Random(), RandomString.lower).nextString();
