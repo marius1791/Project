@@ -1,4 +1,3 @@
-import com.sun.jna.platform.win32.OaIdl;
 import common.*;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.junit.runners.SerenityParameterizedRunner;

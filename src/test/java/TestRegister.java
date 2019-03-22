@@ -45,6 +45,5 @@ public class TestRegister extends PageObject{
         step.registerElements();
         waitABit(1000);
         driver.quit();
-
     }
 }
