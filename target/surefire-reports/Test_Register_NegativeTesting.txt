@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: Test_Register_NegativeTesting
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 233.332 sec - in Test_Register_NegativeTesting

@@ -38,15 +38,15 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
         var test_results_plot = $.jqplot('test_results_pie_chart', [
             [
-                ['Passing', 0.966667],
+                ['Passing', 0.888889],
                 
                 ['Pending', 0],
                 
                 ['Ignored/Skipped', 0],
                 
-                ['Failing', 0],
+                ['Failing', 0.013889],
                 
-                ['Errors',  0.033333],
+                ['Errors',  0],
                 ['Compromised',  0]
             ]
         ], {
@@ -77,26 +77,26 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '29 / 30 tests passed' },
-                {label: '0 / 30 tests pending'},
-                {label: '0 / 30 tests not executed'},
-                {label: '0 / 30 tests failed'},
-                {label: '1 / 30 errors'},
-                {label: '0 / 30 compromised tests'}
+                {label: '64 / 72 tests passed' },
+                {label: '0 / 72 tests pending'},
+                {label: '0 / 72 tests not executed'},
+                {label: '1 / 72 tests failed'},
+                {label: '0 / 72 errors'},
+                {label: '0 / 72 compromised tests'}
             ]
         });
 
         var weighted_test_results_plot = $.jqplot('weighted_test_results_pie_chart', [
             [
-                ['Passing', 0.966667],
+                ['Passing', 0.934307],
                 
                 ['Pending', 0],
                 
                 ['Ignored', 0],
                 
-                ['Failing', 0],
+                ['Failing', 0.014599],
                 
-                ['Errors', 0.033333],
+                ['Errors', 0],
                 ['Compromised', 0],
             ]
         ], {
@@ -128,11 +128,11 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '29 / 30 tests passed (0.966667% of all test steps)' },
-                {label: '0 / 30 tests pending'},
-                {label: '0 / 30 tests not executed'},
-                {label: '0 / 30 tests failed (0% of all test steps)'},
-                {label: '1 / 30 errors (0.033333% of all test steps)'}
+                {label: '64 / 72 tests passed (0.934307% of all test steps)' },
+                {label: '0 / 72 tests pending'},
+                {label: '0 / 72 tests not executed'},
+                {label: '1 / 72 tests failed (0.014599% of all test steps)'},
+                {label: '0 / 72 errors (0% of all test steps)'}
             ]
         });
 
@@ -195,7 +195,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 09-01-2019 16:57</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 22-03-2019 13:58</span>
     <br style="clear:left"/>
 </div>
 <div class="clr"></div>
@@ -209,13 +209,13 @@
     <tr>
         <td width="375px" valign="top">
             <div class="test-count-summary">
-                <span class="test-count-title">30
-                    test scenarios (30 tests in all, including 30
+                <span class="test-count-title">66
+                    test scenarios (72 tests in all, including 72
                     rows of test data)</span>
                 <div>
 
                     <span class="test-count"> |
-                        29
+                        65
                             <a href="01f5288b80adbd3af52a8ed68a4a616d3164f750229f80da1ef344382d948835.html">passed</a>
                         
                     </span>
@@ -225,12 +225,12 @@
                         
                     </span>(
                     <span class="test-count">
-                        0
+                        1
                             <a href="da5b0c51b332adf0ef993a9f086d6a1b51a3d800248ec6ae281212092f35bd37.html">failed</a>
                         ,
                     </span>
                     <span class="test-count">
-                        1
+                        0
                             <a href="c8a926210aeff57f8aa7ea799262d4b730915a909cd5ecd6a705b1fa13bc7aa8.html">with errors</a>
                         
                     </span>)
@@ -284,9 +284,9 @@
         <body>
         <tr>
             <td class="summary-leading-column">Automated</td>
-            <td>30</td>
-            <td>29 (97%)</td>
-            <td>1 (3%)</td>
+            <td>72</td>
+            <td>64 (89%)</td>
+            <td>1 (1%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
@@ -300,15 +300,15 @@
         </tr>
         <tr>
             <td class="summary-leading-column">Total</td>
-            <td>30</td>
-            <td>29 (97%)</td>
-            <td>1 (3%)</td>
+            <td>72</td>
+            <td>64 (89%)</td>
+            <td>1 (1%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Total Duration</td>
-                <td colspan="5">6 minutes 2 seconds</td>
+                <td colspan="5">17 minutes 55 seconds</td>
         </tr>
         </body>
     </table>
@@ -331,7 +331,7 @@
             </tr>
                 <tr>
                     <td class="bluetext" class="tag-title">
-                        <span class="ERROR-text ellipsis">
+                        <span class="FAILURE-text ellipsis">
                                 <a href="dcbb5880e21e3cc186bea4331465fa7ad5ce5505d69636ff9c3c56550776a41f.html" title="Some Feature">Some Feature</a>
                         </span>
                     </td>
@@ -340,27 +340,27 @@
 
                         <table>
                             <tr>
-                                <td class="related-tag-percentage"><span title="29 out of 30 tests (58 steps) passing">96.7%</span></td>
+                                <td class="related-tag-percentage"><span title="64 out of 72 tests (135 steps) passing">88.9%</span></td>
                                 <td width="150px">
                                     <a href="dcbb5880e21e3cc186bea4331465fa7ad5ce5505d69636ff9c3c56550776a41f.html">
                                         <div class="pendingbar"
-                                             title="0 out of 30 tests (0 steps) pending"
+                                             title="0 out of 72 tests (0 steps) pending"
                                              style="width: 150px;">
                                             <div class="ignoredbar"
-                                                 style="width: 150px;"
-                                                 title="0 out of 30 tests (0 steps) skipped or ignored">
+                                                 style="width: 135px;"
+                                                 title="0 out of 72 tests (0 steps) skipped or ignored">
                                                 <div class="compromisedbar"
-                                                     style="width: 150px;"
-                                                     title="0 out of 30 tests (0 steps) compromised">
+                                                     style="width: 135px;"
+                                                     title="0 out of 72 tests (0 steps) compromised">
                                                     <div class="errorbar"
-                                                         style="width: 150px;"
-                                                         title="1 out of 30 tests (2 steps) broken">
+                                                         style="width: 135px;"
+                                                         title="0 out of 72 tests (0 steps) broken">
                                                         <div class="failingbar"
-                                                             style="width: 145px;"
-                                                             title="0 out of 30 tests (0 steps) failing">
+                                                             style="width: 135px;"
+                                                             title="1 out of 72 tests (2 steps) failing">
                                                             <div class="passingbar"
-                                                                 style="width: 145px;"
-                                                                 title="29 out of 30 tests (58 steps) passing">
+                                                                 style="width: 133px;"
+                                                                 title="64 out of 72 tests (135 steps) passing">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -369,7 +369,7 @@
                                         </div>
                                     </a>
                                 </td>
-                                <td class="related-tag-count"><span class="result-test-count" title="30 tests">30</span></td>
+                                <td class="related-tag-count"><span class="result-test-count" title="72 tests">72</span></td>
                             </tr>
                         </table>
                     </td>
@@ -416,9 +416,9 @@
         <body>
         <tr>
             <td class="summary-leading-column">Automated</td>
-            <td>30</td>
-            <td>29 (97%)</td>
-            <td>1 (3%)</td>
+            <td>72</td>
+            <td>64 (89%)</td>
+            <td>1 (1%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
@@ -432,15 +432,15 @@
         </tr>
         <tr>
             <td class="summary-leading-column">Total</td>
-            <td>30</td>
-            <td>29 (97%)</td>
-            <td>1 (3%)</td>
+            <td>72</td>
+            <td>64 (89%)</td>
+            <td>1 (1%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Total Duration</td>
-                <td colspan="5">6 minutes 2 seconds</td>
+                <td colspan="5">17 minutes 55 seconds</td>
         </tr>
         </body>
     </table>
@@ -463,7 +463,7 @@
             </tr>
                 <tr>
                     <td class="bluetext" class="tag-title">
-                        <span class="ERROR-text ellipsis">
+                        <span class="FAILURE-text ellipsis">
                                 <a href="dcbb5880e21e3cc186bea4331465fa7ad5ce5505d69636ff9c3c56550776a41f.html" title="Some Feature">Some Feature</a>
                         </span>
                     </td>
@@ -472,27 +472,27 @@
 
                         <table>
                             <tr>
-                                <td class="related-tag-percentage"><span title="29 out of 30 tests (58 steps) passing">96.7%</span></td>
+                                <td class="related-tag-percentage"><span title="64 out of 72 tests (135 steps) passing">93.4%</span></td>
                                 <td width="150px">
                                     <a href="dcbb5880e21e3cc186bea4331465fa7ad5ce5505d69636ff9c3c56550776a41f.html">
                                         <div class="pendingbar"
-                                             title="0 out of 30 tests (0 steps) pending"
+                                             title="0 out of 72 tests (0 steps) pending"
                                              style="width: 150px;">
                                             <div class="ignoredbar"
-                                                 style="width: 150px;"
-                                                 title="0 out of 30 tests (0 steps) skipped or ignored">
+                                                 style="width: 142px;"
+                                                 title="0 out of 72 tests (0 steps) skipped or ignored">
                                                 <div class="compromisedbar"
-                                                     style="width: 150px;"
-                                                     title="0 out of 30 tests (0 steps) compromised">
+                                                     style="width: 142px;"
+                                                     title="0 out of 72 tests (0 steps) compromised">
                                                     <div class="errorbar"
-                                                         style="width: 150px;"
-                                                         title="1 out of 30 tests (2 steps) broken">
+                                                         style="width: 142px;"
+                                                         title="0 out of 72 tests (0 steps) broken">
                                                         <div class="failingbar"
-                                                             style="width: 145px;"
-                                                             title="0 out of 30 tests (0 steps) failing">
+                                                             style="width: 142px;"
+                                                             title="1 out of 72 tests (2 steps) failing">
                                                             <div class="passingbar"
-                                                                 style="width: 145px;"
-                                                                 title="29 out of 30 tests (58 steps) passing">
+                                                                 style="width: 140px;"
+                                                                 title="64 out of 72 tests (135 steps) passing">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -501,7 +501,7 @@
                                         </div>
                                     </a>
                                 </td>
-                                <td class="related-tag-count"><span class="result-test-count" title="30 tests">30</span></td>
+                                <td class="related-tag-count"><span class="result-test-count" title="72 tests">72</span></td>
                             </tr>
                         </table>
                     </td>
@@ -554,7 +554,7 @@
                                 <td class="lightgreentext">2</td>
 
 
-                                <td class="lightgreentext">5.36</td>
+                                <td class="lightgreentext">5.31</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -575,7 +575,7 @@
                                 <td class="lightgreentext">2</td>
 
 
-                                <td class="lightgreentext">5.49</td>
+                                <td class="lightgreentext">5.39</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -596,7 +596,133 @@
                                 <td class="lightgreentext">2</td>
 
 
-                                <td class="lightgreentext">5.16</td>
+                                <td class="lightgreentext">5.28</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="a6e023b6ca2c0f01a4b96d0b549cd3326c09e67b7f3c10832d70235012f4c422.html" class="ellipsis"
+                                           title="Blank Company field ">
+                                            Blank Company field&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">11.63</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="0be5cc8175bfc66ae3f9d1658e61f0c671eac2d26c75eb7854c57ae87535ca5e.html" class="ellipsis"
+                                           title="Blank Confirm Password field ">
+                                            Blank Confirm Password field&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">25.7</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="cbafb6def08d720b05f339eedaa473dd10d36d6af960290ee019261d5a0c0ae5.html" class="ellipsis"
+                                           title="Blank Email field ">
+                                            Blank Email field&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">23.24</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="d7904b9450d0c8e75b396cb1851984a31e16c66703d8a89097445ab8b9956c15.html" class="ellipsis"
+                                           title="Blank Email field ">
+                                            Blank Email field&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">18.91</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="5f273431ea71933b97e3efbe334ae2e7786ea76d748fd652052c4739cb87ee18.html" class="ellipsis"
+                                           title="Blank Name ">
+                                            Blank Name&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">10.86</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="cf6d83d7091ed46e44f7129169029ae1e07453f3c5bd42dc2e9baae682c721c2.html" class="ellipsis"
+                                           title="Blank Name field ">
+                                            Blank Name field&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">10.51</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -617,7 +743,7 @@
                                 <td class="lightgreentext">2</td>
 
 
-                                <td class="lightgreentext">7.28</td>
+                                <td class="lightgreentext">7.07</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -638,7 +764,7 @@
                                 <td class="lightgreentext">2</td>
 
 
-                                <td class="lightgreentext">4.33</td>
+                                <td class="lightgreentext">4.14</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -659,7 +785,7 @@
                                 <td class="lightgreentext">2</td>
 
 
-                                <td class="lightgreentext">27.21</td>
+                                <td class="lightgreentext">27.43</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -680,7 +806,7 @@
                                 <td class="lightgreentext">2</td>
 
 
-                                <td class="lightgreentext">6.82</td>
+                                <td class="lightgreentext">6.72</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -701,7 +827,7 @@
                                 <td class="lightgreentext">2</td>
 
 
-                                <td class="lightgreentext">25.25</td>
+                                <td class="lightgreentext">27.26</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -722,7 +848,7 @@
                                 <td class="lightgreentext">2</td>
 
 
-                                <td class="lightgreentext">4.09</td>
+                                <td class="lightgreentext">3.87</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -743,7 +869,7 @@
                                 <td class="lightgreentext">2</td>
 
 
-                                <td class="lightgreentext">1.52</td>
+                                <td class="lightgreentext">1.7</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -764,7 +890,7 @@
                                 <td class="lightgreentext">2</td>
 
 
-                                <td class="lightgreentext">12.9</td>
+                                <td class="lightgreentext">12.86</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -785,7 +911,7 @@
                                 <td class="lightgreentext">2</td>
 
 
-                                <td class="lightgreentext">12.91</td>
+                                <td class="lightgreentext">13.37</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -806,7 +932,7 @@
                                 <td class="lightgreentext">2</td>
 
 
-                                <td class="lightgreentext">9.53</td>
+                                <td class="lightgreentext">10.78</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -827,28 +953,7 @@
                                 <td class="lightgreentext">2</td>
 
 
-                                <td class="lightgreentext">13.65</td>
-                            </tr>
-
-                            <tr class="test-SUCCESS">
-                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
-                                    
-                                    <span style="display:none">SUCCESS</span></td>
-                                <td class="SUCCESS-text">
-                                    <div class="ellipsis">
-
-                                        <a href="3ca04721157cfe2da25b1d03478e30523a49fe66e02861373bb707a29ebc7d0e.html" class="ellipsis"
-                                           title="Empty fields login ">
-                                            Empty fields login&nbsp;(1  examples)
-                                                <span class="related-issue-title"></span>
-                                        </a>
-                                    </div>
-                                </td>
-
-                                <td class="lightgreentext">2</td>
-
-
-                                <td class="lightgreentext">5.09</td>
+                                <td class="lightgreentext">13.48</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -869,7 +974,112 @@
                                 <td class="lightgreentext">2</td>
 
 
-                                <td class="lightgreentext">6.74</td>
+                                <td class="lightgreentext">6.67</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="3ca04721157cfe2da25b1d03478e30523a49fe66e02861373bb707a29ebc7d0e.html" class="ellipsis"
+                                           title="Empty fields login ">
+                                            Empty fields login&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">9.11</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="501d5e9e9b3c5554120fcf9af948ea5e38016ad172ed695affb086a1d03b964a.html" class="ellipsis"
+                                           title="Forgot Password Elements ">
+                                            Forgot Password Elements&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">8.14</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="797f9ff3a637f0b7002cb4c6386cc61b378ace75d2024f16e741d7d33655f2f8.html" class="ellipsis"
+                                           title="Forgot Password Flow ">
+                                            Forgot Password Flow&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">17.24</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="a3cf351dff860880daead85b45155d6c6cbf98775978ba1a025ac90f4fe70333.html" class="ellipsis"
+                                           title="Home Elements ">
+                                            Home Elements&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">3.67</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="f6eeea71bb00f17b341387db890e4ba388fd05d26b7a35d3dbad291fe11b12a8.html" class="ellipsis"
+                                           title="Home link functionality ">
+                                            Home link functionality&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">3.35</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -890,7 +1100,7 @@
                                 <td class="lightgreentext">2</td>
 
 
-                                <td class="lightgreentext">16.23</td>
+                                <td class="lightgreentext">31.92</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -911,7 +1121,7 @@
                                 <td class="lightgreentext">2</td>
 
 
-                                <td class="lightgreentext">13.57</td>
+                                <td class="lightgreentext">15.09</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -932,7 +1142,7 @@
                                 <td class="lightgreentext">2</td>
 
 
-                                <td class="lightgreentext">13.52</td>
+                                <td class="lightgreentext">13.3</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -953,7 +1163,7 @@
                                 <td class="lightgreentext">2</td>
 
 
-                                <td class="lightgreentext">13.57</td>
+                                <td class="lightgreentext">14.12</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -974,7 +1184,7 @@
                                 <td class="lightgreentext">2</td>
 
 
-                                <td class="lightgreentext">13.69</td>
+                                <td class="lightgreentext">13.5</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -995,7 +1205,7 @@
                                 <td class="lightgreentext">2</td>
 
 
-                                <td class="lightgreentext">13.73</td>
+                                <td class="lightgreentext">13.5</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -1016,7 +1226,259 @@
                                 <td class="lightgreentext">2</td>
 
 
-                                <td class="lightgreentext">18.93</td>
+                                <td class="lightgreentext">19.07</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="96b2c2e07f75b52ed20fa91715ec1d067814ab287d9dc835d475406ea02ef439.html" class="ellipsis"
+                                           title="Invalid credentials (valid username and password with a space afterwards) ">
+                                            Invalid credentials (valid username and password with a space afterwards)&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">18.92</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="392b85911884339b5aedd593d32d996397d0755850abde68f3eb6cd99325d746.html" class="ellipsis"
+                                           title="Invalid email - empty field ">
+                                            Invalid email - empty field&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">13.63</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="0703683a718638624e42f8bd6d7e852394e154479d6656a4495e363f9548d410.html" class="ellipsis"
+                                           title="Invalid email - empty field ">
+                                            Invalid email - empty field&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">13.75</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="558379377a9f81ea9108e273be37cf2d1d141b8969ebdbab7c8ee77eb65affe6.html" class="ellipsis"
+                                           title="Invalid email - password - digits ">
+                                            Invalid email - password - digits&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">17.79</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="07ba830cd7d1ad00ff38fc70bb1666cc1d50a114236eb02c4e536dabce1ccfe0.html" class="ellipsis"
+                                           title="Invalid email - password - digits ">
+                                            Invalid email - password - digits&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">18.12</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="646c6249b7a8b97cf4aa7a4b97f245a04b0b81949b913fb00fe316e45189481c.html" class="ellipsis"
+                                           title="Invalid email - password - empty field ">
+                                            Invalid email - password - empty field&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">7.47</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="bbff3fc4f66f804eaa1a2181a7831fad403825b3737cd401465da6ba1832eeb9.html" class="ellipsis"
+                                           title="Invalid email - password - empty field ">
+                                            Invalid email - password - empty field&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">7.31</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="ec13b9e49ccd1e383fcb16750eb302cdfeeee4831dbbf890e787af0980995980.html" class="ellipsis"
+                                           title="Invalid email - password - specialCharacters ">
+                                            Invalid email - password - specialCharacters&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">9.72</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="fa2c2e241f6584f297e5cf9ab80dd42ff2426e51a71fa7de8a857ebdeb4ea215.html" class="ellipsis"
+                                           title="Invalid email - password - specialCharacters ">
+                                            Invalid email - password - specialCharacters&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">7.27</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="dcb81d65afd96ead73dda6b3d93148abe7d8f2cc00965aabcd609a941a0d873d.html" class="ellipsis"
+                                           title="Invalid password - empty field ">
+                                            Invalid password - empty field&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">13.55</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="a12117274b4c2575fecb38f5bf3fefae40672a85158e89ffef7db32ef024c598.html" class="ellipsis"
+                                           title="Invalid password - empty field ">
+                                            Invalid password - empty field&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">13.81</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="8c531bfff39f0025bf89efc87c0c1a59d40827be6a305942ab5e8c8382a0bea8.html" class="ellipsis"
+                                           title="Login Elements ">
+                                            Login Elements&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">9.61</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -1037,7 +1499,70 @@
                                 <td class="lightgreentext">2</td>
 
 
-                                <td class="lightgreentext">4.29</td>
+                                <td class="lightgreentext">4.14</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="38c07a9cbf8cfe7a50ce0763db33a8ca04bde2156ba068543e1d54e6c953c00d.html" class="ellipsis"
+                                           title="Register Elements ">
+                                            Register Elements&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">15.34</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="692e33424c83c9b2172004ab5618e2396f13d180947baf65303bda2b186a8941.html" class="ellipsis"
+                                           title="Register Elements ">
+                                            Register Elements&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">25.16</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="d88e313ce7ed55ed38ce441d7bd137e5edd8fdbf6b1565407907fb2e0c11a7c9.html" class="ellipsis"
+                                           title="Register Elements ">
+                                            Register Elements&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">9.74</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -1058,7 +1583,7 @@
                                 <td class="lightgreentext">2</td>
 
 
-                                <td class="lightgreentext">15.51</td>
+                                <td class="lightgreentext">17.72</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -1079,7 +1604,7 @@
                                 <td class="lightgreentext">2</td>
 
 
-                                <td class="lightgreentext">5.29</td>
+                                <td class="lightgreentext">5.02</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -1100,7 +1625,7 @@
                                 <td class="lightgreentext">2</td>
 
 
-                                <td class="lightgreentext">9.53</td>
+                                <td class="lightgreentext">10.31</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -1110,8 +1635,71 @@
                                 <td class="SUCCESS-text">
                                     <div class="ellipsis">
 
+                                        <a href="71dfa2583e40ea2776ea8d73993b2774060ec14dbee84ef42a3d87bc63011493.html" class="ellipsis"
+                                           title="Special characters on company field ">
+                                            Special characters on company field&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">35.45</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="c699aed7c24f178cc6ea666305fdf907a48fccb905569c069643ab24909317e7.html" class="ellipsis"
+                                           title="Special characters on email field ">
+                                            Special characters on email field&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">34.69</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="457a5ff7727c3aa6a80ea079e26eb11044b0d99efd9c91d3580ccd24f2feee65.html" class="ellipsis"
+                                           title="Special characters on name field ">
+                                            Special characters on name field&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">36.3</td>
+                            </tr>
+
+                            <tr class="test-FAILURE">
+                                <td><span class="summary-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
+                                    
+                                    <span style="display:none">FAILURE</span></td>
+                                <td class="FAILURE-text">
+                                    <div class="ellipsis">
+
                                         <a href="ba5dfce9257a6dac06a8660f1fb4c28432810c78ad9a939af9dcff58ef23402b.html" class="ellipsis"
-                                           title="Succesfull login ">
+                                           title="Succesfull login Element should be visible exception: ...">
                                             Succesfull login&nbsp;(1  examples)
                                                 <span class="related-issue-title"></span>
                                         </a>
@@ -1121,19 +1709,19 @@
                                 <td class="lightgreentext">2</td>
 
 
-                                <td class="lightgreentext">22.72</td>
+                                <td class="lightgreentext">38.44</td>
                             </tr>
 
-                            <tr class="test-ERROR">
-                                <td><span class="summary-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                                     
-                                    <span style="display:none">ERROR</span></td>
-                                <td class="ERROR-text">
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
                                     <div class="ellipsis">
 
-                                        <a href="fcaa3f55da73e866bc168ab120fc9d90107254b5f1fbce9e234c5624b7168e92.html" class="ellipsis"
-                                           title="Successful order placement No such element exception: no such el...">
-                                            Successful order placement&nbsp;(1  examples)
+                                        <a href="d68aeee47687c3d603c4c2c5354a955bb942fc8fba4aa67e36713da69a2bf04d.html" class="ellipsis"
+                                           title="Successful login ">
+                                            Successful login&nbsp;(1  examples)
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
@@ -1142,7 +1730,154 @@
                                 <td class="lightgreentext">2</td>
 
 
-                                <td class="lightgreentext">45.94</td>
+                                <td class="lightgreentext">17.72</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="1751ee11f5a8636a1e110994ff80f39d7f67fb8ace31120d22e534f76d3e6764.html" class="ellipsis"
+                                           title="Test 1 : The phone subcategory ">
+                                            Test 1 : The phone subcategory&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">34.26</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="144e496531c7bdad46003c370264623f958c961e8d82de0d5fb59a55d1b3eb15.html" class="ellipsis"
+                                           title="Test 1 : The phone subcategory ">
+                                            Test 1 : The phone subcategory&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">18.54</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="d2b10b095b30a6b108aa2269eb9c5815effe67bc1cc60b24cd068642e2beb1c8.html" class="ellipsis"
+                                           title="Test 1: Slider elements are present ">
+                                            Test 1: Slider elements are present&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">10.7</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="31e9fcbcb7db7442d5967bba4eea902d3d2db20e881c5e653eee8c141111e245.html" class="ellipsis"
+                                           title="Test 1: Test laptops subcategory ">
+                                            Test 1: Test laptops subcategory&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">18.76</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="b35e82d720dc0e8c1e19b7573f13d16ce2f2f13f5c95973fab918ee761131748.html" class="ellipsis"
+                                           title="Test 1: Test the functionality of the add to cart delete flow ">
+                                            Test 1: Test the functionality of the add to cart delete flow&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">10.3</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="bc40e38ed07ae0e9cea5b43efb55011687c3638ec39362ca81e1a5b6fba524c1.html" class="ellipsis"
+                                           title="Test 1: Test the functionality of the add to cart delete flow ">
+                                            Test 1: Test the functionality of the add to cart delete flow&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">10.55</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="c57e371f63face19e59adefd8ba333fec95c5972ab6063b7ddf8abb96cf14324.html" class="ellipsis"
+                                           title="Test 1: The monitors subcategory ">
+                                            Test 1: The monitors subcategory&nbsp;(1  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">2</td>
+
+
+                                <td class="lightgreentext">6.02</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -1163,7 +1898,28 @@
                                 <td class="lightgreentext">2</td>
 
 
-                                <td class="lightgreentext">3.01</td>
+                                <td class="lightgreentext">3</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+
+                                        <a href="f5a19dc0389f6f4fe42a26625d9701c388775d1a2dcfda9cf022a7b82749d1c5.html" class="ellipsis"
+                                           title="Verify search between different locations ">
+                                            Verify search between different locations&nbsp;(7  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">7</td>
+
+
+                                <td class="lightgreentext">147.91</td>
                             </tr>
                         </tbody>
                     </table>

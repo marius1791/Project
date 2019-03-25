@@ -36,15 +36,15 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
         var test_results_plot = $.jqplot('test_results_pie_chart', [
             [
-                ['Passing', 0.966667],
+                ['Passing', 0.888889],
                 
                 ['Pending', 0],
                 
                 ['Ignored', 0],
                 
-                ['Failing', 0],
+                ['Failing', 0.013889],
                 
-                ['Errors',  0.033333]
+                ['Errors',  0]
             ]
         ], {
 
@@ -73,25 +73,25 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '29 / 30 tests passed' },
-                {label: '0 / 30 tests pending'},
-                {label: '0 / 30 tests not executed'},
-                {label: '0 / 30 tests failed'},
-                {label: '1 / 30 errors'}
+                {label: '64 / 72 tests passed' },
+                {label: '0 / 72 tests pending'},
+                {label: '0 / 72 tests not executed'},
+                {label: '1 / 72 tests failed'},
+                {label: '0 / 72 errors'}
             ]
         });
 
         var weighted_test_results_plot = $.jqplot('weighted_test_results_pie_chart', [
             [
-                ['Passing', 0.966667],
+                ['Passing', 0.934307],
                 
                 ['Pending', 0],
                 
                 ['Ignored', 0],
                 
-                ['Failing', 0],
+                ['Failing', 0.014599],
                 
-                ['Errors', 0.033333]
+                ['Errors', 0]
             ]
         ], {
 
@@ -121,11 +121,11 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '29 / 30 tests passed (0.966667% of all test steps)' },
-                {label: '0 / 30 tests pending'},
-                {label: '0 / 30 tests not executed'},
-                {label: '0 / 30 tests failed (0% of all test steps)'},
-                {label: '1 / 30 errors (0.033333% of all test steps)'}
+                {label: '64 / 72 tests passed (0.934307% of all test steps)' },
+                {label: '0 / 72 tests pending'},
+                {label: '0 / 72 tests not executed'},
+                {label: '1 / 72 tests failed (0.014599% of all test steps)'},
+                {label: '0 / 72 errors (0% of all test steps)'}
             ]
         });
 
@@ -186,7 +186,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 09-01-2019 16:57</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 22-03-2019 13:58</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -203,7 +203,7 @@
                     </tr>
                     <tr>
                         <td style="width: 30%">Operating System</td>
-                        <td>Windows 10 version 10.0</td>
+                        <td>Mac OS X version 10.14.3</td>
                     </tr>
                 </table>
 
