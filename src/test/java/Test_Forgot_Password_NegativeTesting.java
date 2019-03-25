@@ -64,4 +64,13 @@ public class Test_Forgot_Password_NegativeTesting extends PageObject{
         waitABit(1000);
         driver.quit();
     }
+
+    @Test
+    @Title("Invalid email (invalid email - digits)")
+    public void Forgot_Password_Digits() {
+
+        forgotPassword_negativeTesting_steps.invalid_email_digits();
+        waitABit(1000);
+        driver.quit();
+    }
 }
