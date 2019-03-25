@@ -20,7 +20,7 @@ import steps.Register_NegativeTesting_Steps;
 @UseTestDataFrom(value = "src/main/resources/urls.csv", separator = Constants.CSV_SEPARATOR)
 
 
-public class Test_Register_NegativeTesting extends PageObject {
+public class Register_NegativeTesting_Test extends PageObject {
     @Managed(uniqueSession = true, driver = "Chrome")
     public WebDriver driver;
 

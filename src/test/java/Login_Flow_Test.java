@@ -19,7 +19,7 @@ import steps.Login_Flow_Steps;
 @RunWith(SerenityParameterizedRunner.class)
 @UseTestDataFrom(value = "src/main/resources/urls.csv", separator = Constants.CSV_SEPARATOR)
 
-public class Test_Login_Flow extends PageObject{
+public class Login_Flow_Test extends PageObject{
     @Managed(uniqueSession = true, driver = "Chrome")
     public WebDriver driver;
 

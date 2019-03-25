@@ -13,18 +13,19 @@ import org.openqa.selenium.WebDriver;
 
 import common.Application;
 import common.Constants;
-import steps.Forgot_Password_NegativeTesting_Steps;
+import steps.Forgot_Password_Steps;
 
 @Story(Application.SomeFeature.class)
 @RunWith(SerenityParameterizedRunner.class)
 @UseTestDataFrom(value = "src/main/resources/urls.csv", separator = Constants.CSV_SEPARATOR)
 
-public class Test_ForgotPassword_NegativeTesting extends PageObject{
+
+public class ForgotPassword_Page_Test extends PageObject {
     @Managed(uniqueSession = true, driver = "Chrome")
     public WebDriver driver;
 
     @Steps
-    private Forgot_Password_NegativeTesting_Steps forgotPassword_negativeTesting_steps;
+    private Forgot_Password_Steps forgotPassword_steps;
 
     private String url;
 
@@ -39,37 +40,19 @@ public class Test_ForgotPassword_NegativeTesting extends PageObject{
     }
 
     @Test
-    @Title("Invalid email (empty field)")
-    public void Forgot_Password_EmptyField() {
+    @Title("Forgot Password Elements")
+    public void Forgot_Password_Elements() {
 
-        forgotPassword_negativeTesting_steps.invalid_email_emptyField();
+        forgotPassword_steps.forgotPassword_elements();
         waitABit(1000);
         driver.quit();
     }
 
     @Test
-    @Title("Invalid email (special characters)")
-    public void Forgot_Password_SpecialCharacters() {
+    @Title("Forgot Password Flow")
+    public void Forgot_Password_Flow() {
 
-        forgotPassword_negativeTesting_steps.invalid_email_specialCharacters();
-        waitABit(1000);
-        driver.quit();
-    }
-
-    @Test
-    @Title("Invalid email (invalid email - without @gmail.com for example)")
-    public void Forgot_Password_InvalidCredentials() {
-
-        forgotPassword_negativeTesting_steps.invalid_email_invalidCredentials();
-        waitABit(1000);
-        driver.quit();
-    }
-
-    @Test
-    @Title("Invalid email (invalid email - digits)")
-    public void Forgot_Password_Digits() {
-
-        forgotPassword_negativeTesting_steps.invalid_email_digits();
+        forgotPassword_steps.forgotPassword_flow();
         waitABit(1000);
         driver.quit();
     }

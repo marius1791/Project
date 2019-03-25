@@ -13,18 +13,18 @@ import org.openqa.selenium.WebDriver;
 
 import common.Application;
 import common.Constants;
-import steps.Home_Page_Steps;
+import steps.Register_Steps;
 
 @Story(Application.SomeFeature.class)
 @RunWith(SerenityParameterizedRunner.class)
 @UseTestDataFrom(value = "src/main/resources/urls.csv", separator = Constants.CSV_SEPARATOR)
-public class Test_Home_Page extends PageObject {
 
+public class Register_Test extends PageObject{
     @Managed(uniqueSession = true, driver = "Chrome")
     public WebDriver driver;
 
     @Steps
-    private Home_Page_Steps step;
+    private Register_Steps step;
 
     private String url;
 
@@ -39,32 +39,11 @@ public class Test_Home_Page extends PageObject {
     }
 
     @Test
-    @Title("Home Elements")
+    @Title("Register Elements")
     public void HomeElements() {
 
-        step.homeElements();
-        waitABit(1000);
-        driver.quit();
-
-    }
-
-    @Test
-    @Title("Home link functionality")
-    public void HomeLinkFunctionality() {
-
-        step.linkFunctionality();
+        step.registerElements();
         waitABit(1000);
         driver.quit();
     }
-
-    @Test
-    @Title("Login Elements")
-    public void loginElements () {
-
-        step.LoginElements();
-        waitABit(1000);
-        driver.quit();
-    }
-
 }
-

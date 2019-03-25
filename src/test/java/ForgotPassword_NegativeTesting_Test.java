@@ -13,21 +13,18 @@ import org.openqa.selenium.WebDriver;
 
 import common.Application;
 import common.Constants;
-import pages.Login_NegativeTesting_Page;
-import steps.Login_Flow_Steps;
-import steps.Login_NegativeTesting_Steps;
+import steps.Forgot_Password_NegativeTesting_Steps;
 
 @Story(Application.SomeFeature.class)
 @RunWith(SerenityParameterizedRunner.class)
 @UseTestDataFrom(value = "src/main/resources/urls.csv", separator = Constants.CSV_SEPARATOR)
 
-public class Test_Login_NegativeTesting extends PageObject {
-
+public class ForgotPassword_NegativeTesting_Test extends PageObject{
     @Managed(uniqueSession = true, driver = "Chrome")
     public WebDriver driver;
 
     @Steps
-    private Login_NegativeTesting_Steps login_negativeTesting_steps;
+    private Forgot_Password_NegativeTesting_Steps forgotPassword_negativeTesting_steps;
 
     private String url;
 
@@ -42,46 +39,37 @@ public class Test_Login_NegativeTesting extends PageObject {
     }
 
     @Test
-    @Title("Invalid email - empty field")
-    public void Invalid_email_emptyField() {
+    @Title("Invalid email (empty field)")
+    public void Forgot_Password_EmptyField() {
 
-        login_negativeTesting_steps.invalid_empty_email();
+        forgotPassword_negativeTesting_steps.invalid_email_emptyField();
         waitABit(1000);
         driver.quit();
     }
 
     @Test
-    @Title("Invalid password - empty field")
-    public void Invalid_password_emptyField() {
+    @Title("Invalid email (special characters)")
+    public void Forgot_Password_SpecialCharacters() {
 
-        login_negativeTesting_steps.invalid_empty_password();
+        forgotPassword_negativeTesting_steps.invalid_email_specialCharacters();
         waitABit(1000);
         driver.quit();
     }
 
     @Test
-    @Title("Invalid email - password - empty field")
-    public void Invalid_email_password_emptyField() {
+    @Title("Invalid email (invalid email - without @gmail.com for example)")
+    public void Forgot_Password_InvalidCredentials() {
 
-        login_negativeTesting_steps.invalid_empty_email_password();
+        forgotPassword_negativeTesting_steps.invalid_email_invalidCredentials();
         waitABit(1000);
         driver.quit();
     }
 
     @Test
-    @Title("Invalid email - password - digits")
-    public void Invalid_email_password_digits() {
+    @Title("Invalid email (invalid email - digits)")
+    public void Forgot_Password_Digits() {
 
-        login_negativeTesting_steps.invalid_email_password_digits();
-        waitABit(1000);
-        driver.quit();
-    }
-
-    @Test
-    @Title("Invalid email - password - specialCharacters")
-    public void Invalid_email_password_specialCharacters() {
-
-        login_negativeTesting_steps.invalid_empty_email_password();
+        forgotPassword_negativeTesting_steps.invalid_email_digits();
         waitABit(1000);
         driver.quit();
     }
