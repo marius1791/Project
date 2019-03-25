@@ -2,12 +2,11 @@ package steps;
 
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
-import org.openqa.selenium.WebDriver;
-import pages.HomePage;
+import pages.Home_Page;
 
-public class HomePageSteps extends ScenarioSteps {
+public class Home_Page_Steps extends ScenarioSteps {
 
-    HomePage homePage;
+    Home_Page homePage;
 
     @Step("Test 1: Home Elements")
     public void homeElements() {

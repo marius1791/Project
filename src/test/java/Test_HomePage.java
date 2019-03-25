@@ -13,18 +13,18 @@ import org.openqa.selenium.WebDriver;
 
 import common.Application;
 import common.Constants;
-import steps.HomePageSteps;
+import steps.Home_Page_Steps;
 
 @Story(Application.SomeFeature.class)
 @RunWith(SerenityParameterizedRunner.class)
 @UseTestDataFrom(value = "src/main/resources/urls.csv", separator = Constants.CSV_SEPARATOR)
-public class TestHomePage extends PageObject {
+public class Test_HomePage extends PageObject {
 
     @Managed(uniqueSession = true, driver = "Chrome")
     public WebDriver driver;
 
     @Steps
-    private HomePageSteps step;
+    private Home_Page_Steps step;
 
     private String url;
 

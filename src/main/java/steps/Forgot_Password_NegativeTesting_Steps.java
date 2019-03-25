@@ -3,10 +3,10 @@ package steps;
 import common.UserInfo;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
-import pages.ForgotPassword_NegativeTesting_Page;
+import pages.Forgot_Password_NegativeTesting_Page;
 
-public class ForgotPassword_NegativeTesting_Steps extends ScenarioSteps {
-    ForgotPassword_NegativeTesting_Page forgotPassword_negativeTesting_page;
+public class Forgot_Password_NegativeTesting_Steps extends ScenarioSteps {
+    Forgot_Password_NegativeTesting_Page forgotPassword_negativeTesting_page;
 
     @Step("Test 1: Invalid email (empty field)")
     public void invalid_email_emptyField() {

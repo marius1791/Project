@@ -2,11 +2,11 @@ package steps;
 
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
-import pages.RegisterPage;
+import pages.Register_Page;
 
-public class RegisterSteps extends ScenarioSteps {
+public class Register_Steps extends ScenarioSteps {
 
-    RegisterPage registerPage;
+    Register_Page registerPage;
 
     @Step("Test 1: Register page elements")
     public void registerElements() {

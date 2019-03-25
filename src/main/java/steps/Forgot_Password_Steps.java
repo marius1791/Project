@@ -2,10 +2,10 @@ package steps;
 
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
-import pages.ForgotPassword_Page;
+import pages.Forgot_Password_Page;
 
-public class ForgotPassword_Steps extends ScenarioSteps {
-    ForgotPassword_Page forgotPassword_page;
+public class Forgot_Password_Steps extends ScenarioSteps {
+    Forgot_Password_Page forgotPassword_page;
 
 
     @Step("Test 1: Forgot password page elements")

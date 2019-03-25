@@ -23,7 +23,7 @@ import static common.City.*;
 @UseTestDataFrom(value = "src/main/resources/urls.csv", separator = Constants.CSV_SEPARATOR)
 
 @Concurrent
-public class DataDrivenExampleTest extends PageObject{
+public class Data_Driven_Example_Test extends PageObject{
     @Managed(uniqueSession = true, driver = "Chrome")
     public WebDriver driver;
 
@@ -47,7 +47,7 @@ public class DataDrivenExampleTest extends PageObject{
     private final City cityFrom;
     private final City cityTo;
 
-    public DataDrivenExampleTest(City cityFrom, City cityTo) {
+    public Data_Driven_Example_Test(City cityFrom, City cityTo) {
         this.cityFrom = cityFrom;
         this.cityTo = cityTo;
     }

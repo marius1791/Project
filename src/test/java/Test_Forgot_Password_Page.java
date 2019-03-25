@@ -13,7 +13,7 @@ import org.openqa.selenium.WebDriver;
 
 import common.Application;
 import common.Constants;
-import steps.ForgotPassword_Steps;
+import steps.Forgot_Password_Steps;
 
 @Story(Application.SomeFeature.class)
 @RunWith(SerenityParameterizedRunner.class)
@@ -25,7 +25,7 @@ public class Test_Forgot_Password_Page extends PageObject {
     public WebDriver driver;
 
     @Steps
-    private ForgotPassword_Steps forgotPassword_steps;
+    private Forgot_Password_Steps forgotPassword_steps;
 
     private String url;
 
