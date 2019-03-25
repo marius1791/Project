@@ -13,7 +13,7 @@ import org.openqa.selenium.WebDriver;
 
 import common.Application;
 import common.Constants;
-import steps.Register_FLow_Steps;
+import steps.Register_Flow_Steps;
 
 @Story(Application.SomeFeature.class)
 @RunWith(SerenityParameterizedRunner.class)
@@ -24,7 +24,7 @@ public class Test_Register_Flow extends PageObject{
     public WebDriver driver;
 
     @Steps
-    private Register_FLow_Steps register_fLow_steps;
+    private Register_Flow_Steps register_fLow_steps;
 
     private String url;
 

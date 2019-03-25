@@ -13,19 +13,18 @@ import org.openqa.selenium.WebDriver;
 
 import common.Application;
 import common.Constants;
-import steps.Forgot_Password_Steps;
+import steps.Home_Page_Steps;
 
 @Story(Application.SomeFeature.class)
 @RunWith(SerenityParameterizedRunner.class)
 @UseTestDataFrom(value = "src/main/resources/urls.csv", separator = Constants.CSV_SEPARATOR)
+public class Test_Home_Page extends PageObject {
 
-
-public class Test_Forgot_Password_Page extends PageObject {
     @Managed(uniqueSession = true, driver = "Chrome")
     public WebDriver driver;
 
     @Steps
-    private Forgot_Password_Steps forgotPassword_steps;
+    private Home_Page_Steps step;
 
     private String url;
 
@@ -40,20 +39,32 @@ public class Test_Forgot_Password_Page extends PageObject {
     }
 
     @Test
-    @Title("Forgot Password Elements")
-    public void Forgot_Password_Elements() {
+    @Title("Home Elements")
+    public void HomeElements() {
 
-        forgotPassword_steps.forgotPassword_elements();
+        step.homeElements();
+        waitABit(1000);
+        driver.quit();
+
+    }
+
+    @Test
+    @Title("Home link functionality")
+    public void HomeLinkFunctionality() {
+
+        step.linkFunctionality();
         waitABit(1000);
         driver.quit();
     }
 
     @Test
-    @Title("Forgot Password Flow")
-    public void Forgot_Password_Flow() {
+    @Title("Login Elements")
+    public void loginElements () {
 
-        forgotPassword_steps.forgotPassword_flow();
+        step.LoginElements();
         waitABit(1000);
         driver.quit();
     }
+
 }
+

@@ -19,7 +19,7 @@ import steps.Forgot_Password_NegativeTesting_Steps;
 @RunWith(SerenityParameterizedRunner.class)
 @UseTestDataFrom(value = "src/main/resources/urls.csv", separator = Constants.CSV_SEPARATOR)
 
-public class Test_Forgot_Password_NegativeTesting extends PageObject{
+public class Test_ForgotPassword_NegativeTesting extends PageObject{
     @Managed(uniqueSession = true, driver = "Chrome")
     public WebDriver driver;
 
