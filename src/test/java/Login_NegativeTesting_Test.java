@@ -85,4 +85,13 @@ public class Login_NegativeTesting_Test extends PageObject {
         waitABit(1000);
         driver.quit();
     }
+
+    @Test
+    @Title("Invalid email - password - specialCharacters")
+    public void Invalid_email_password_blankSpace() {
+
+        login_negativeTesting_steps.invalid_email_password_blankSpace();
+        waitABit(1000);
+        driver.quit();
+    }
 }

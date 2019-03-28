@@ -35,4 +35,10 @@ public class Login_NegativeTesting_Steps extends ScenarioSteps {
         UserInfo userInfo = new UserInfo().generateUser();
         login_negativeTesting_page.invalid_email_password_specialCharacters(userInfo);
     }
+
+    @Step("Invalid credentials (invalid email - valid credentials with a space afterwards for email and password)")
+    public void invalid_email_password_blankSpace() {
+        UserInfo userInfo = new UserInfo().generateUser();
+        login_negativeTesting_page.invalid_email_password_blankSpace(userInfo);
+    }
 }

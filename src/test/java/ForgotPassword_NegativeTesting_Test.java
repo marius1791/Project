@@ -73,4 +73,13 @@ public class ForgotPassword_NegativeTesting_Test extends PageObject{
         waitABit(1000);
         driver.quit();
     }
+
+    @Test
+    @Title("Invalid email (invalid email - valid credentials with a space afterwards)")
+    public void Forgot_Password_BlankSpace() {
+
+        forgotPassword_negativeTesting_steps.invalid_email_blankSpace();
+        waitABit(1000);
+        driver.quit();
+    }
 }

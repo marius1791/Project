@@ -56,4 +56,13 @@ public class Forgot_Password_NegativeTesting_Page extends Helper2 {
         clickElement(this.getDriver(), send_password_reset_link_button(), 2000);
         popUp2(this.getDriver());
     }
+
+    // Test 5: Invalid email (invalid email - valid credentials with a space afterwards)
+    public void invalidEmail_blankSpace(UserInfo userInfo) {
+        clickElement(this.getDriver(), home_subtitle(), 3000);
+        clickElement(this.getDriver(), forgotYourPassword(), 3000);
+        clickAndSendKeys(this.getDriver(), email_address_field(), userInfo.validUsernameBlankSpace, 2000);
+        clickElement(this.getDriver(), send_password_reset_link_button(), 2000);
+        popUp2(this.getDriver());
+    }
 }

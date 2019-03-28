@@ -30,4 +30,10 @@ public class Forgot_Password_NegativeTesting_Steps extends ScenarioSteps {
         UserInfo userInfo = new UserInfo().generateUser();
         forgotPassword_negativeTesting_page.invalidEmail_digits(userInfo);
     }
+
+    @Step("Test 5: Invalid email (invalid email - valid credentials with a space afterwards)")
+    public void invalid_email_blankSpace() {
+        UserInfo userInfo = new UserInfo().generateUser();
+        forgotPassword_negativeTesting_page.invalidEmail_blankSpace(userInfo);
+    }
 }
